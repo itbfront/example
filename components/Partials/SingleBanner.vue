@@ -163,7 +163,6 @@ export default {
   async fetch(){
     await this.$axios.$get('api/banner').then(res => {
       if(res){
-        console.log(res)
         this.banner = res.data[0]
         this.loading = false
       }
